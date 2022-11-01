@@ -1,0 +1,76 @@
+<html>
+<head></head>
+<body>
+<p>
+<a href="#client">introduction to web</a>
+<a href="#webapp">components of web application</a>
+<a href="#webcontent">types of web content</a>
+</p>
+<h1>Client Server Model</h1>
+<div id="client">
+<p>The Client-server model is a distributed application structure that partitions task or workload between the providers of a resource or service, called servers, and service requesters called clients. In the client-server architecture, when the client computer sends a request for data to the server through the internet, </div>the server accepts the requested process and deliver the data packets requested back to the client. Clients do not share any of their resources. Examples of Client-Server Model are Email, World Wide Web, etc.</p>
+<br>
+<p>Generally, a service is an abstraction of computer resources and a client does not have to be concerned with how the server performs while fulfilling the request and delivering the response. The client only has to understand the response based on the well-known application protocol, i.e. the content and the formatting of the data for the requested service.
+
+Clients and servers exchange messages in a request–response messaging pattern. The client sends a request, and the server returns a response. This exchange of messages is an example of inter-process communication. To communicate, the computers must have a common language, and they must follow rules so that both the client and the server know what to expect. The language and rules of communication are defined in a communications protocol. All protocols operate in the application layer. The application layer protocol defines the basic patterns of the dialogue. To formalize the data exchange even further, the server may implement an application programming interface (API).[3] The API is an abstraction layer for accessing a service. By restricting communication to a specific content format, it facilitates parsing. By abstracting access, it facilitates cross-platform data exchange.[4]
+
+A server may receive requests from many distinct clients in a short period. A computer can only perform a limited number of tasks at any moment, and relies on a scheduling system to prioritize incoming requests from clients to accommodate them. To prevent abuse and maximize availability, the server software may limit the availability to clients. Denial of service attacks are designed to exploit a server's obligation to process requests by overloading it with excessive request rates. Encryption should be applied if sensitive information is to be communicated between the client and the server.
+<br>Client-host and server-host have subtly different meanings than client and server. A host is any computer connected to a network. Whereas the words server and client may refer either to a computer or to a computer program, server-host and client-host always refer to computers. The host is a versatile, multifunction computer; clients and servers are just programs that run on a host. In the client-server model, a server is more likely to be devoted to the task of serving.
+
+An early use of the word client occurs in "Separating Data from Function in a Distributed File System", a 1978 paper by Xerox PARC computer scientists Howard Sturgis, James Mitchell, and Jay Israel. The authors are careful to define the term for readers, and explain that they use it to distinguish between the user and the user's network node (the client).[7] By 1992, the word server had entered into general parlance.[8][9] 
+<br>In addition to the client-server model, distributed computing applications often use the peer-to-peer (P2P) application architecture.
+
+In the client–server model, the server is often designed to operate as a centralized system that serves many clients. The computing power, memory and storage requirements of a server must be scaled appropriately to the expected workload. Load-balancing and failover systems are often employed to scale the server beyond a single physical machine.[15][16]
+
+Load balancing is defined as the methodical and efficient distribution of network or application traffic across multiple servers in a server farm. Each load balancer sits between client devices and backend servers, receiving and then distributing incoming requests to any available server capable of fulfilling them.
+
+In a peer-to-peer network, two or more computers (peers) pool their resources and communicate in a decentralized system. Peers are coequal, or equipotent nodes in a non-hierarchical network. Unlike clients in a client-server or client–queue–client network, peers communicate with each other directly.[citation needed] In peer-to-peer networking, an algorithm in the peer-to-peer communications protocol balances load, and even peers with modest resources can help to share the load.[citation needed] If a node becomes unavailable, its shared resources remain available as long as other peers offer it. Ideally, a peer does not need to achieve high availability because other, redundant peers make up for any resource downtime; as the availability and load capacity of peers change, the protocol reroutes requests.
+
+Both client–server and master–slave are regarded as sub-categories of distributed peer-to-peer systems.[17] </p>
+<img src="index.png" alt="no img">
+
+<h1>components of web application</h1>
+<div id="webapp">
+<p>
+All web-based database applications have three primary components: A web browser (or client), a web application server, and a database server.
+
+Web-based database applications rely on a database server, which provides the data for the application. The database server sometimes also provides business logic in the form of stored procedures. Stored procedures can offer significant performance advantages, especially in a multi-tiered architecture. In addition to database servers, other enterprise information system components include IMS databases, IBM® MQ messages, and CICS® records.</div><br>
+
+The clients handle the presentation logic, which controls the way in which users interact with the application. In some cases, the client validates user-provided input. Web applications sometimes integrate Java™ applets into the client-side logic to improve the presentation layer.</p>
+<br><p>
+<b>Applet</b><br>
+    A Java program that is part of a Hypertext Markup Language (HTML) page. (HTML is the standard method for presenting web data to users.) Applets work with Java-enabled browsers, such as Microsoft Internet Explorer; they are loaded when the HTML page is processed.
+
+Web application servers manage the business logic. The business logic, typically written in Java, supports multitiered applications. The web application server can manage requests from a variety of remote clients. The web application layer might include JavaServer Pages (JSP) files, Java servlets, Enterprise JavaBeans (EJB) components, or web services.
+
+<b>JSP</b><br>
+    A technology that provides a consistent way to extend web server functionality and create dynamic web content. The web applications that you develop with JSP technology are server and platform independent.
+Servlet
+    A Java program that responds to client requests and generates responses dynamically.
+<b>EJB</b><br>
+    A component architecture for building distributed applications with the Java programming model. Server transactional components are reusable and provide portability across application servers.
+Web services<br>
+    Self-contained, modular applications that provide an interface between the provider and the consumer of application resources. You can read more about web services later in this information.
+
+
+<img src="web.jpeg" alt="no image">
+
+<h1>types of web components</h1>
+<div id="webcontent">
+<p>The most common types of websites are blogs, ecommerce sites, online portfolios, and corporate websites, but there are several more. Knowing the differences between each type of website can help you understand which one you need for your business or project.</div><br>
+
+This article describes the most common types of websites, explaining what they're for and who uses them. For each website type, we'll also recommend the best way to build one, backed by our expert research and testing.</p>
+<p>Web components are basically platform agnostic components that are written in a way that they have the actual style encapsulations. Almost all modern JavaScript frameworks support web components. You can check this website by Rob Dodson to find out if the framework you are using today supports web components or not.
+
+Web components consist of three main technologies:<br<
+
+    HTML template
+    Custom elements
+    Shadow DOM
+
+<br>Previously, HTML imports were also a part of it, but with ES6 modules, HTML imports became deprecated. The Polymer team is working on an HTML Module to provide the ability to load an HTML template into JavaScript code.
+
+<br>So let’s go through each of these three technologies together.
+<img src="types.jpeg" alt="no image">
+</body>
+</html>
